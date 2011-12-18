@@ -1,0 +1,110 @@
+.drop-shadow {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    float: left;
+    margin: 2em 10px 4em;
+    padding: 1em;
+    position: relative;
+}
+.drop-shadow:before, .drop-shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+}
+.lifted {
+    border-radius: 4px 4px 4px 4px;
+}
+.lifted:before, .lifted:after {
+    -moz-transform: rotate(-3deg);
+    bottom: 15px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    height: 20%;
+    left: 10px;
+    max-width: 300px;
+    width: 50%;
+}
+.lifted:after {
+    -moz-transform: rotate(3deg);
+    left: auto;
+    right: 10px;
+}
+.curled {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom: 1px solid #EFEFEF;
+    border-radius: 0 0 120px 120px / 0 0 6px 6px;
+    border-top: 1px solid #EFEFEF;
+}
+.curled:before, .curled:after {
+    -moz-transform: skew(-8deg) rotate(-3deg);
+    bottom: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    height: 55%;
+    left: 10px;
+    max-width: 200px;
+    width: 50%;
+}
+.curled:after {
+    -moz-transform: skew(8deg) rotate(3deg);
+    left: auto;
+    right: 10px;
+}
+.perspective:before {
+    -moz-transform: skew(50deg);
+    -moz-transform-origin: 0 100%;
+    bottom: 5px;
+    box-shadow: -80px 0 8px rgba(0, 0, 0, 0.4);
+    height: 35%;
+    left: 80px;
+    max-width: 200px;
+    width: 50%;
+}
+.perspective:after {
+    display: none;
+}
+.raised {
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.curved:before {
+    border-radius: 10px 10px 10px 10px / 100px 100px 100px 100px;
+    bottom: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    left: 0;
+    right: 50%;
+    top: 10px;
+}
+.curved-vt-2:before {
+    right: 0;
+}
+.curved-hz-1:before {
+    border-radius: 100px 100px 100px 100px / 10px 10px 10px 10px;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    top: 50%;
+}
+.curved-hz-2:before {
+    border-radius: 100px 100px 100px 100px / 10px 10px 10px 10px;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    top: 0;
+}
+.rotated {
+    -moz-transform: rotate(-3deg);
+    box-shadow: none;
+}
+.rotated > *:first-child:before {
+    background: none repeat scroll 0 0 #FFFFFF;
+    bottom: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{{ wish.name }} </title>
+
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="/static/blueprint/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/static/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="/static/custom.css" type="text/css" media="screen, projection">
+    <!--[if lt IE 8]><link rel="stylesheet" href="/static/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+  </head>
+  <body>
+	<div class="container">
+	<h3> <a href="/"> Home </a> </h3>
+	
+	<div >
+		<h1>  {{ wish.name }} </h1>		
+			<h3 class="drop-shadow raised"> {{ wish.wish1 }} </h3>
+			<h3 class="drop-shadow raised"> {{ wish.wish2 }} </h3>
+			<h3 class="drop-shadow raised"> {{ wish.wish3 }} </h3>
+			<h3 class="drop-shadow raised"> {{ wish.wish4 }} </h3>
+			<h3 class="drop-shadow raised"> {{ wish.wish5 }} </h3>		
+	</div>
+	</div>
+</html>

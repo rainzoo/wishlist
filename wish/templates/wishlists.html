@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> Wish Lists </title>
+
+	<!-- Framework CSS -->
+    <link rel="stylesheet" href="/static/blueprint/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/static/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="/static/custom.css" type="text/css" media="screen, projection">
+    <!--[if lt IE 8]><link rel="stylesheet" href="/static/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+  </head>
+  <body>
+	<div class="container">	
+	<h3> <a href="/"> Home </a> </h3>
+    <h1>Wish lists</h1>
+    <ul>
+        {% for wish in object_list %}
+		<div class="drop-shadow raised">
+            <h2> <a href="/wish/{{wish.id}}/"> {{ wish.name }} </a> </h2>
+			<ol>
+				<li> {{ wish.wish1 }}
+				<li> {{ wish.wish2 }} 
+				<li> {{ wish.wish3 }} 
+				<li> {{ wish.wish4 }} 
+				<li> {{ wish.wish5 }} 
+			</ol>
+		</div>
+        {% endfor %}
+    </ul>
+	</div>
+</html>
